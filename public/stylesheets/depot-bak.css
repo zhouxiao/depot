@@ -14,6 +14,15 @@
         font:  150% sans-serif;
         color: #226;
         border-bottom: 3px dotted #77d;
+        float: left
+}
+
+#store h3 {
+	      font:  110% sans-serif;
+        color: red;
+        font-weight: bold;
+        border-bottom: 3px dotted #77d;
+        float: right
 }
 
 /* Styles for products/index */
@@ -86,7 +95,7 @@
 }
 
 #main {
-  margin-left: 19em;
+  margin-left: 17em;
   padding-top: 4ex;
   padding-left: 2em;
   background: white;
@@ -97,7 +106,7 @@
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 18em;
+  width: 16em;
   background: #141;
 }
 
@@ -105,6 +114,17 @@
   color: #bfb;
   font-size: small;
 }
+
+#side .time {
+	color: #FF8040;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	padding-top: 24em;
+	position: absolute;
+	left: 12px;
+}
+
 /* END:mainlayout */
 
 /* An entry in the store catalog */
@@ -113,6 +133,7 @@
   overflow: auto;
   margin-top: 1em;
   border-bottom: 1px dotted #77d;
+  clear: both
 }
 
 #store  .title {
@@ -120,17 +141,19 @@
   font-family: sans-serif;
 }
 
-#store .entry img, .productimg {
+#store .entry img {
   width: 80px;
   margin-right: 5px;
   margin-bottom: 5px;
   float: left;
 }
 
+
 #store .entry h3 {
  margin-top: 0;
  margin-bottom: 2px;
  color: #227;
+
 }
 
 #store .entry p {
@@ -153,56 +176,32 @@
   margin-right: 2em;
 }
 
-/* START:inline */
 #store .entry form, #store .entry form div {
-  display: inline;
+	display : inline;
 }
-/* END:inline */
 
-/* START:cartmain */
 /* Styles for the cart in the main page */
 
 #store .cart_title {
-  font: 120% bold;
+	font: 120% bold;
 }
 
 #store .item_price, #store .total_line {
-  text-align: right;
+	text-align: right;
 }
 
 #store .total_line .total_cell {
-  font-weight: bold;
-  border-top: 1px solid #595;
-}
-/* END:cartmain */
-
-/* START:cartside */
-/* Styles for the cart in the sidebar */
-
-#cart, #cart table {
-  font-size: smaller;
-  color:     white;
-}
-
-#cart table {
-  border-top:    1px dotted #595;
-  border-bottom: 1px dotted #595;
-  margin-bottom: 10px;
-}
-/* END:cartside */
-
-#side .time {
-	color: #FF8040;
-	font-size: 14px;
 	font-weight: bold;
-	float: left;
-	padding-top: 16em;
-	position: absolute;
-	left: 12px;
+	border-top: 1px solid #595;
 }
 
-h3.visitno {
-	text-align: right;
-	color: red;
-	float: right;
+#cart, #cart table{
+	font-size: smaller;
+	color: white;
+}
+
+#cart table{
+	border-top:			1px dotted #595;
+	border-bottom:	1px dotted #595;
+	margin-bottom: 	10px;
 }

@@ -10,5 +10,12 @@ module ApplicationHelper
 		
 		return t_str 
 	end
+	
+	def hidden_div_if(condition, attributes = {}, &block)
+		if condition
+			attributes["style"] = "display: none"
+		end
+		content_tag("div", attributes, &block)
+	end
 
 end
