@@ -1,7 +1,17 @@
 
 $("#notice").hide
 
-$("#cart").html( "<%= escape_javascript(render(@cart)) %>");
+$("#cart").css('display', 'block');
 
-//$("#cart").animate({backgroundColor:"#0D4602"}, 500)
+ $( "#cart" ).animate({
+			backgroundColor: "#6BCD87",
+			}, 1500 );
+
+$("#cart").html( "<%= escape_javascript(render(@cart)) %>");			
+
+ $( "#cart" ).animate({
+			backgroundColor: "transparent",
+			}, 1500 );
+
+
 
