@@ -6,11 +6,13 @@ class StoreController < ApplicationController
  			session[:counter] = 0
  		end
     session[:counter] += 1
-  	@products = Product.all
-
-	  @products = Product.all
-  	@cart = current_cart
-
+  
+  	if params[:set_locale]
+  		redirect_to store_path(:locale => params[:set_locale])
+  	else  
+  	  @products = Product.all
+  		@cart = current_cart
+		end
   end
 
 end

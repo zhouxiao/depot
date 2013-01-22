@@ -240,3 +240,8 @@ h3.visitno {
 .depot_form div {
 	margin: 0.5em 0;
 }
+
+.locale {
+	float: right;
+	padding_top: 0.2em
+}

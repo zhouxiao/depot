@@ -13,37 +13,37 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, t('.name') + ":" %><br />
 <!-- START_HIGHLIGHT -->
     <%= f.text_field :name, :size => 40 %>
 <!-- END_HIGHLIGHT -->
   </div>
 
   <div class="field">
-    <%= f.label :address %><br />
+    <%= f.label :address, t('.address') + ":" %><br />
 <!-- START_HIGHLIGHT -->
     <%= f.text_area :address, :rows => 3, :cols => 40 %>
 <!-- END_HIGHLIGHT -->
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, t('.email') + ":" %><br />
 <!-- START_HIGHLIGHT -->
     <%= f.email_field :email, :size => 40 %>
 <!-- END_HIGHLIGHT -->
   </div>
 
   <div class="field">
-    <%= f.label :pay_type %><br />
+    <%= f.label :pay_type, t('.pay_type') + ":" %><br />
 <!-- START_HIGHLIGHT -->
     <%= f.select :pay_type, Order::PAYMENT_TYPES,
-                  :prompt => 'Select a payment method' %>
+                  :prompt => t('.pay_prompt') %>
 <!-- END_HIGHLIGHT -->
   </div>
 
   <div class="actions">
 <!-- START_HIGHLIGHT -->
-    <%= f.submit 'Place Order' %>
+    <%= f.submit t('.submit') %>
 <!-- END_HIGHLIGHT -->
   </div>
 
