@@ -2,6 +2,8 @@ source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.11'
 
+gem 'mysql2'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -44,3 +46,5 @@ gem 'jquery-rails'
 # end
 
 gem 'will_paginate'
+
+
